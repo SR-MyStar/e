@@ -53,7 +53,7 @@ impl Parse for CStyleLoop {
 /// # Example
 ///
 /// ```rust
-/// e_macros::cfor! {
+/// e_macro::cfor! {
 ///     for (let mut i = 0; i < 10; i += 1) {
 ///         println!("Got: {}", i);
 ///     }

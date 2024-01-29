@@ -1,7 +1,7 @@
 [package]
 name = "e_macro"
 readme = "README.md"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["纳西妲 · Nahida <yanwenz551@gmail.com>"]
 license = "GPL-3.0-or-later"
