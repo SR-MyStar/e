@@ -1,13 +1,22 @@
 [package]
 name = "e"
 readme = "README.md"
-version = "0.0.0"
+version = "0.1.1"
 edition = "2021"
 authors = ["纳西妲 · Nahida <yanwenz551@gmail.com>"]
+exclude = ["/target", "/Cargo.lock"]
 license = "GPL-3.0-or-later"
+keywords = ["util", "macro"]
 repository = "https://github.com/SR-MyStar/e"
-description = "A Rust Library"
+description = "Provide some utility tools"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+[workspace]
+members = ["e_macro"]
 
-[dependencies]
+[features]
+default = ["macros"]
+macros = []
+
+[dependencies.e_macro]
+path = "e_macro"
+version = "0.1.0"
