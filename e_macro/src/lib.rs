@@ -8,14 +8,14 @@ use syn::{
     Block, Expr, Stmt, Token,
 };
 
-struct CStyleLoop {
+struct CStyleForLoop {
     initializer: Option<Stmt>,
     condition: Option<Expr>,
     increment: Option<Expr>,
     loop_block: Block,
 }
 
-impl Parse for CStyleLoop {
+impl Parse for CStyleForLoop {
     fn parse(input: ParseStream) -> syn::Result<Self> {
         input.parse::<Token![for]>()?;
         let in_parenthesized;
@@ -62,12 +62,12 @@ impl Parse for CStyleLoop {
 #[proc_macro]
 pub fn cfor(input: TokenStream) -> TokenStream {
     let input_clone = input.clone();
-    let CStyleLoop {
+    let CStyleForLoop {
         initializer,
         condition,
         increment,
         loop_block,
-    } = syn::parse_macro_input!(input_clone as CStyleLoop);
+    } = syn::parse_macro_input!(input_clone as CStyleForLoop);
     TokenStream::from(
         if initializer.is_none() && condition.is_none() && increment.is_none() {
             quote! {
