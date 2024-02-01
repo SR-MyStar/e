@@ -1,11 +1,11 @@
 [package]
 name = "e"
 readme = "README.md"
-version = "0.1.1"
+version = "0.2.0"
 edition = "2021"
 authors = ["纳西妲 · Nahida <yanwenz551@gmail.com>"]
 exclude = ["/target", "/Cargo.lock"]
-license = "GPL-3.0-or-later"
+license = "MPL-2.0"
 keywords = ["util", "macro"]
 repository = "https://github.com/SR-MyStar/e"
 description = "Provide some utility tools"
@@ -19,4 +19,4 @@ macros = []
 
 [dependencies.e_macro]
 path = "e_macro"
-version = "0.1.1"
+version = "0.2.0"

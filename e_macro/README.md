@@ -7,7 +7,7 @@
 Add the following line to your `Cargo.toml`:
 
 ```toml
-e = "0.1.0"
+e = "0.2.0"
 ```
 
 Or run the following Cargo command in your project directory:
