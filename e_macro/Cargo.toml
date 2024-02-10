@@ -1,20 +1,10 @@
 [package]
 name = "e_macro"
 readme = "README.md"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2021"
 authors = ["纳西妲 · Nahida <yanwenz551@gmail.com>"]
 license = "MPL-2.0"
 keywords = ["macro", "macros"]
 repository = "https://github.com/SR-MyStar/e"
 description = "A module for e library, it provides some utility macros for Rust"
-
-[lib]
-proc-macro = true
-
-[dependencies.quote]
-version = "1.0.35"
-
-[dependencies.syn]
-version = "2.0.48"
-features = ["full", "fold"]

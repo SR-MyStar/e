@@ -1,7 +1,7 @@
 [package]
 name = "e"
 readme = "README.md"
-version = "0.2.0"
+version = "0.2.1"
 edition = "2021"
 authors = ["纳西妲 · Nahida <yanwenz551@gmail.com>"]
 exclude = ["/target", "/Cargo.lock"]
@@ -19,4 +19,4 @@ macros = []
 
 [dependencies.e_macro]
 path = "e_macro"
-version = "0.2.0"
+version = "0.2"
